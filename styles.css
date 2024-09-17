@@ -14,12 +14,34 @@ body {
     color: #ffdd57;
   }
   
+  input[type="text"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ffdd57;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ffcc00;
+  }
+  
+  /* Стилі для "Results" */
+  .results-header {
+    text-align: center;
+    font-size: 24px;
+    color: #ffdd57;
+    margin: 20px 0;
+  }
+  
   .movie-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    animation: fadeIn 1s ease-out;
   }
   
   .movie {
@@ -37,7 +59,6 @@ body {
   
   .movie img {
     width: 100%;
-    border-bottom: 4px solid і#ffdd57;
   }
   
   .movie-title {
@@ -48,7 +69,19 @@ body {
     color: #ffdd57;
   }
   
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffdd57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  
+  button:hover {
+    background-color: #ffc107;
+  }
+  

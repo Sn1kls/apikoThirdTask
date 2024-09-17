@@ -10,8 +10,14 @@
 <body>
   <header>
     <h1>TheMovieDB PoC</h1>
+    <input type="text" id="search-input" placeholder="Search">
   </header>
-  <div class="movie-list" id="movie-list">Loading popular movies...</div>
+  <div id="movie-container">
+    <div class="results-header" id="results-header"></div>
+    <div class="movie-list" id="movie-list">Results will appear here...</div>
+  </div>
+
+  <button id="load-more-button" style="display: none;">Load more</button>
   <script src="script.js"></script>
 </body>
 </html>
