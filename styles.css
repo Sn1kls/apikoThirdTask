@@ -45,6 +45,7 @@ body {
   }
   
   .movie {
+    position: relative;
     width: 200px;
     border-radius: 10px;
     overflow: hidden;
@@ -69,6 +70,7 @@ body {
     color: #ffdd57;
   }
   
+  
   button {
     display: block;
     margin: 20px auto;
@@ -82,6 +84,47 @@ body {
   }
   
   button:hover {
+    background-color: #ffc107;
+  }
+  
+  .heart-container {
+    text-align: center;
+    padding: 10px;
+  }
+
+.heart {
+  font-size: 24px;
+  color: #ffdd57;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+  
+  .heart.active {
+    color: red;
+  }
+  
+  #nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  #nav-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffdd57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #nav-buttons button:hover {
+    background-color: #ffc107;
+  }
+  
+  #nav-buttons button.active {
     background-color: #ffc107;
   }
   
